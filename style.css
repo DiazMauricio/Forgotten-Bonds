@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Jost', sans-serif;
+    color: #fff;
+}
+body{
+    background-color: #0E1010;
+}
+p{
+    margin: 1em 0;
+}
+h2{
+    font-size: 3em;
+    font-weight: 400;
+}
+h4{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.map{
+    width: 100%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,550px));
+    gap: 30px;
+    justify-content: center;
+}
+.col-6{
+    grid-column: span 6;
+}
+.col-4{
+    grid-column: span 4;
+}
+.align_s_center{
+    align-self: center;
+}
+header{
+    padding: 8em 0;
+}
+.header-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-text > p{
+    padding: 1.5em;
+    max-width: 450px;
+}
+.place{
+    row-gap: 0;
+    grid-template-rows: repeat(2,1fr);
+    background-color: #171717;
+}
+.place_img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.mapasvg{
+    width: 100%;
+    height: 100%;
+}
+
+.place-text{
+    grid-row: span 2;
+    padding: 3rem 1rem;
+    padding-bottom: 4em;
+    position: relative;
+    min-height: 400px;
+   
+}
+.place-text > *{
+    margin: 1rem 0;
+}
+.place-text h2{
+    font-size: 3em;
+}
+.placeButtons{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.placeButtons > button{
+    padding: .8rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 1rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+.placeButtons > button:hover{
+    background-color: #C5FF7A;
+    color: #000;
+}
+.label{
+    max-width: 100%;
+}
+.label_rel5{
+    margin: 8rem 0;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.label_rel5>svg{
+    max-width: 450px;
+    padding: 0 2em;
+}
+.label_rel5>.text{
+    max-width: 850px;
+    padding: 0 2em;
+
+}
+
+/* Gods */
+.gods_buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.gods_buttons > button{
+    width: 5em;
+    height: 5em;
+    border: solid 4px  #171717;
+    border-bottom: 0;
+    background: none;
+    cursor: pointer;
+}
+.gods_buttons > button:hover{
+    background-color: #171717;
+}
+.gods_buttons > button > svg{
+    padding: .5em;
+}
+
+
+.gods{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.gods_frame{
+    width: 500vw;
+    display: flex;
+    transition: transform .5s;
+    justify-content: stretch;
+    align-items: stretch;
+}
+.god{
+    width: 100%;
+    position: relative;
+    padding: 2em 0;
+}
+.god_background{
+    position: absolute;
+    background-color: #171717;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.god_content_c1 > * {
+    padding: 0 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.god_content_name{
+    max-width: 350px;
+    margin: auto;
+}
+.god_content_c2 > * {
+    padding: 0 2em;
+}
+/* Factions */
+
+
+.faction{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 1em;
+}
+.faction > svg{
+     grid-column: 1;
+}
+.faction > p{
+     grid-column: 2 / span 3;
+     margin-top: 0;
+}
+
+
+@media (orientation: portrait) {
+    
+    /* header{
+        padding: 1.5em;
+    }
+    .faction{
+        padding: 1em;
+    }
+    .faction > svg{
+        grid-column: 1;
+    }
+    .faction > p{
+        margin: 0;
+        grid-column: 2 / span 5;
+    } */
+}
