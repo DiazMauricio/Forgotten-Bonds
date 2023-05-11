@@ -75,13 +75,13 @@ var places = [
         "text":"Hogar de la Orden Lanza Roble, el bosque de Gizem se diferencia del resto por su alta cantidad de criaturas del Féricas, y aunque muchas se consideran inofensivas y prefieren no interactuar con los visitantes, si deciden agregarte a sus “juegos” es posible que nunca logres salir de este bosque sin ayuda.",
         "viewbox": "1360 1450 1266 512",
         "imgsrc": "src/Gizem.png"
+    },
+    {
+        "titulo":"Las afueras",
+        "text":"BendRockBendRock",
+        "viewbox": "600 660 2532 1024",
+        "imgsrc": "src/Afueras.png"
     }
-    // {
-    //     "titulo":"Las afueras",
-    //     "text":"BendRockBendRock",
-    //     "viewbox": "600 660 2532 1024",
-    //     "imgsrc": "src/Afueras.png"
-    // }
 ]
 setPlace(place_number);
 
